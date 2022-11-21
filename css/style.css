@@ -28,7 +28,7 @@ nav {
     border-radius: 5px;
     padding: 1.5em 1em;
     box-shadow: 0px 0px 10px 0px #64646494;
-    transition: width .5s linear;
+    transition: width .7s ease-in-out;
     overflow-x: hidden;
 }
 
@@ -40,7 +40,7 @@ nav ul {
     display: flex;
     width: 0;
     list-style-type: none;
-    transition: width .5s linear;
+    transition: width .7s ease-in-out;
 }
 
 nav.active ul {
@@ -50,7 +50,7 @@ nav.active ul {
 nav ul li {
   transform: rotateY(0deg);
   opacity: 0;
-  transition: transform 0.5s linear, opacity 0.5s linear;
+  transition: transform .7s ease-in-out, opacity .7s ease-in-out;
 }
 
 nav.active ul li {
@@ -74,6 +74,10 @@ nav ul a {
     cursor: pointer;
 }
 
+nav.active .icon {
+    margin-right: 1em;
+}
+
 .line {
     width: 20px;
     height: 2px;
@@ -81,7 +85,7 @@ nav ul a {
     position: absolute;
     top: 10px;
     left: 5px;
-    transition: transform .5s linear;
+    transition: transform .7s ease-in-out;
 }
 
 .line2 {
